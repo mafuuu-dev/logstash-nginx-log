@@ -1,7 +1,7 @@
 #### **Инструкция по запуску:**
 - устанавливаем Docker
 - устанавливаем Docker-Compose
-- cd <path-to-repo>
+- cd <path-to-dir.logstash-nginx-log>
 - docker-compose up --build -d && docker-compose logs -f --tail=0
 
 #### **Использование:**
