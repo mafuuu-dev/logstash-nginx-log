@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  logstash:
+    build: .
+    ports:
+      - 6782:6782
+    expose:
+      - 6782
+    volumes:
+      - ./logs/:/logs/
+      - ./patterns:/opt/logstash/patterns
+      - ./configs/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./configs/pipeline.conf:/usr/share/logstash/pipeline/pipeline.conf

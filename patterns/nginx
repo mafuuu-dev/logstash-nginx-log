@@ -1,0 +1,6 @@
+NGUSERNAME [a-zA-Z\.\@\-\+_%]+
+NGUSER %{NGUSERNAME}
+
+NGINXACCESS %{IPORHOST:clientip}\s+%{NGUSER:ident}\s+%{NGUSER:auth}\s+\[%{HTTPDATE:timestamp}\]\s+"%{WORD:method}\s+%{URIPATHPARAM:request}\s+HTTP/%{NUMBER:http_version}"\s+%{NUMBER:response_code}\s+(?:%{NUMBER:bytes_sent}|-)\s+"(?:%{URI:referrer}|-)"\s+%{QS:agent}(%{SPACE})?(%{QS:http_x_forwarded_for})?
+
+NGINXERROR (?<timestamp>%{YEAR}[./]%{MONTHNUM}[./]%{MONTHDAY}\s+%{TIME})\s+\[%{LOGLEVEL:log_level}\]\s+%{POSINT:pid}#%{NUMBER:threadid}\:\s+\*%{NUMBER:connectionid}\s+%{GREEDYDATA:error_message},\s+client:\s+%{IP:client_ip},\s+server:\s+(%{GREEDYDATA:server})?,\s+request:\s+"%{WORD:method}\s+%{URIPATHPARAM:request}\s+HTTP/%{NUMBER:http_version}",\s+host:\s+"%{DATA:host}"

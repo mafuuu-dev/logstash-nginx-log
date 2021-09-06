@@ -1,0 +1,5 @@
+2017/03/29 17:32:56 [error] 21924#21924: *212595 access forbidden by rule, client: 172.31.0.14, server: , request: "POST /app/etc/local.xml HTTP/1.1", host: "www.test.test"
+2017/03/29 17:32:56 [error] 21924#21924: *212595 access forbidden by rule, client: 172.31.0.14, server: , request: "POST /app/etc/local.xml HTTP/1.1", host: "www.test.test"
+2017/03/29 17:32:56 [error] 21924#21924: *212595 access forbidden by rule, client: 172.31.0.14, server: , request: "POST /app/etc/local.xml HTTP/1.1", host: "www.test.test"
+2017/03/29 17:32:56 [error] 21924#21924: *212595 access forbidden by rule, client: 172.31.0.14, server: , request: "POST /app/etc/local.xml HTTP/1.1", host: "www.test.test"
+2017/03/29 17:32:56 [error] 21924#21924: *212595 access forbidden by rule, client: 172.31.0.14, server: , request: "POST /app/etc/local.xml HTTP/1.1", host: "www.test.test"
